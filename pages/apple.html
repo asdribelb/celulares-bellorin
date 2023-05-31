@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celulares-Bellorin</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+
+    <header class="logotipo">
+
+        <div class="cent"> <a href="../index.html">
+            <img class="logo translate" src="../img/cel_logo.png" alt="logo">
+        </a>
+        </div>
+
+
+    </header>
+
+
+<nav class="navegador">
+    <ul>
+        <li>
+            <a href="../index.html">
+                <button class="boton-navegador">
+
+                    <i class="bi bi-globe"></i> Inicio
+                </button>
+            </a>
+        </li>
+
+        <li>
+            <a href="../pages/apple.html">
+                <button class="boton-navegador">
+                    <i class="bi bi-phone"></i> Apple
+                </button>
+            </a>
+        </li>
+
+        <li>
+            <a href="../pages/samsung.html">
+                <button class="boton-navegador">
+                    <i class="bi bi-phone-fill"></i> Samsung
+                </button>
+            </a>
+        </li>
+
+        <li>
+            <a class="boton-carrito" href="../pages/carrito.html">
+                Carrito
+                <i class="bi bi-cart"></i>
+                <span class="numerito">0</span>
+            </a>
+        </li>
+    </ul>
+</nav>
+
+
+    <section class="productos" id="contenedor-productos">
+
+        <div id="contenedor-productos" class="card_celular">
+            <img src="../img/IPHONE 11.jpg" alt="Iphone11">
+            <h3>Apple iPhone 11 128 GB</h3>
+            <p class = "celular_texto">$150.990</p>
+            <button id= "iphone11" class="agregar">Agregar al Carrito</button>
+        </div>
+
+        <div class="card_celular">
+            <img src="../img/iphone 12.jpg" alt="iphone12">
+            <h3>Apple iPhone 12 128 GB</h3>
+            <p class = "celular_texto">$310.990</p>
+            <button onclick="agregarAlCarrito(this)" id="iphone12" class="agregar">Agregar al Carrito</button>
+
+        </div>
+
+        <div class="card_celular">
+            <img src="../img/iphone 13.jpg" alt="Iphone13">
+            <h3>Apple iPhone 13 128 GB</h3>
+            <p class = "celular_texto">$415.990</p>
+            <button id="iphone13" class="agregar">Agregar al Carrito</button>
+
+        </div>
+
+    </section>
+
+    <section class="productos" id="contenedor-productos">
+        <div class="card_celular">
+            <img src="../img/iphone 7.jpg" alt="iphone7">
+            <h3>Apple iPhone 7 128 GB</h3>
+            <p class = "celular_texto">$150.990</p>
+            <button id="iphone7" class="agregar">Agregar al Carrito</button>
+        </div>
+
+        <div class="card_celular">
+            <img src="../img/iphone 8.jpg" alt="iphone8">
+            <h3>Apple iPhone 8 64 GB</h3>
+            <p class = "celular_texto">$150.990</p>
+            <button id="iphone8" class="agregar">Agregar al Carrito</button>
+
+        </div>
+
+        <div class="card_celular">
+            <img src="../img/iphone x.jpg" alt="iphonex">
+            <h3>Apple iPhone x 128 GB </h3>
+            <p class = "celular_texto">$699.990</p>
+            <button id="iphonex" class="agregar">Agregar al Carrito</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="pagina">
+            <a class="icono scale" target="_blank" href="http://https://www.instagram.com/">
+                <img class="pagina1" src="../img/instagram-1.svg">
+            </a>
+            <a class="icono scale" target="_blank" href="http://https://www.google.com/intl/es-419/gmail/about/">
+                <img class="pagina1" src="../img/correo.png"> </a>
+            <a class="icono scale" target="_blank" href="http://facebook.com">
+                <img class="pagina1" src="../img/facebook-1.svg"> </a>
+            <a class="icono scale" target="_blank" href="http://whatsaap.com">
+                <img class="pagina1" src="../img/whatsaap 1.svg"> </a>
+        </div>
+
+        <div class="texto">
+            <p>&copy;Todos los derechos reservados</p>
+        </div>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+        
+    <script src="../main.js"></script>
+
+</body>
+
+</html>
