@@ -198,3 +198,9 @@ verCarrito.addEventListener("click", () => {
     
 
 });
+
+
+  
+
+
+
