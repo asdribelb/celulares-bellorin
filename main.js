@@ -32,7 +32,7 @@ const productos = [
     {
         id: "iphone-11",
         titulo: "Iphone 11",
-        imagen: "../img/IPHONE 11",
+        imagen: "../img/IPHONE 11.jpg",
         categoria: {
             nombre: "Apple",
             id: "apple",

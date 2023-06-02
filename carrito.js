@@ -55,7 +55,6 @@
 verCarrito.addEventListener("click", comprarCarrito);
 
 
-
 const eliminarProductos = () => {
     const foundId = carrito.find((element) => element.id);
 
