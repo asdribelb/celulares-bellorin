@@ -150,18 +150,12 @@ productos.forEach((product) => {
             precio: product.precio,
         });
 
-        localStorage.setItem('carrito', JSON.stringify(carrito));
-
         console.log(carrito);
     });
 
     carContenido.append(content);
-
-    const carritoJSON = localStorage.getItem('carrito');
-
-    if (carritoJSON) {
-        carrito = JSON.parse(carritoJSON);
-    }
 });
+
+
 
 
