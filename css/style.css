@@ -48,6 +48,11 @@ li {
   border: none;
   color: #fff;
   cursor: pointer;
+  text-decoration: none;
+}
+.navegador a {
+  text-decoration: none;
+  
 }
 
 .boton-navegador i {
@@ -187,8 +192,13 @@ footer {
   background-color: #555;
 }
 
+.ver-carrito{
+ cursor: pointer;
+  }
+
 .ver-carrito :hover{
   display: none;
+
 
 }
 
