@@ -32,7 +32,7 @@ const productos = [
     {
         id: "iphone-11",
         titulo: "Iphone 11",
-        imagen: "../img/iphone 11.jpg",
+        imagen: "../img/IPHONE 11",
         categoria: {
             nombre: "Apple",
             id: "apple",
@@ -72,7 +72,7 @@ const productos = [
     {
         id: "samsung-note20",
         titulo: "Samsung Note20",
-        imagen: "../img/samsung20.jpg",
+        imagen: "../img/SAMSUNG20.jpg",
         categoria: {
             nombre: "Samsung",
             id: "samsung",
@@ -82,7 +82,7 @@ const productos = [
     {
         id: "samsung-a52",
         titulo: "Samsung A52",
-        imagen: "../img/samsung A52.jpg",
+        imagen: "../img/SAMSUNG A52.jpg",
         categoria: {
             nombre: "Samsung",
             id: "samsung",
@@ -92,7 +92,7 @@ const productos = [
     {
         id: "samsung-a32",
         titulo: "Samsung A32",
-        imagen: "../img/samsung a32.jpg",
+        imagen: "../img/SAMSUNG A32.jpg",
         categoria: {
             nombre: "Samsung",
             id: "samsung",
@@ -112,7 +112,7 @@ const productos = [
     {
         id: "samsung-s20",
         titulo: "Samsung S20",
-        imagen: "../img/samsungs20.jpg",
+        imagen: "../img/SAMSUNGS20.jpg",
         categoria: {
             nombre: "Samsung",
             id: "samsung",
