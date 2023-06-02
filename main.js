@@ -21,7 +21,7 @@ const productos = [
     },
     {
         id: "iphone-x",
-        titulo: "iphone X",
+        titulo: "Iphone X",
         imagen: "../img/iphone x.jpg",
         categoria: {
             nombre: "Apple",
@@ -31,7 +31,7 @@ const productos = [
     },
     {
         id: "iphone-11",
-        titulo: "iphone 11",
+        titulo: "Iphone 11",
         imagen: "../img/iphone 11.jpg",
         categoria: {
             nombre: "Apple",
@@ -41,7 +41,7 @@ const productos = [
     },
     {
         id: "iphone-12",
-        titulo: "iphone 12",
+        titulo: "Iphone 12",
         imagen: "../img/iphone 12.jpg",
         categoria: {
             nombre: "Apple",
@@ -51,7 +51,7 @@ const productos = [
     },
     {
         id: "iphone-13",
-        titulo: "iphone 13",
+        titulo: "Iphone 13",
         imagen: "../img/iphone 13.jpg",
         categoria: {
             nombre: "Apple",
@@ -61,7 +61,7 @@ const productos = [
     },
     {
         id: "samsung-s21",
-        titulo: "samsung s21",
+        titulo: "Samsung S21",
         imagen: "../img/samsung galaxy s21.jpg",
         categoria: {
             nombre: "Samsung",
@@ -71,7 +71,7 @@ const productos = [
     },
     {
         id: "samsung-note20",
-        titulo: "samsung note20",
+        titulo: "Samsung Note20",
         imagen: "../img/samsung20.jpg",
         categoria: {
             nombre: "Samsung",
@@ -81,7 +81,7 @@ const productos = [
     },
     {
         id: "samsung-a52",
-        titulo: "samsung a52",
+        titulo: "Samsung A52",
         imagen: "../img/samsung A52.jpg",
         categoria: {
             nombre: "Samsung",
@@ -91,7 +91,7 @@ const productos = [
     },
     {
         id: "samsung-a32",
-        titulo: "samsung a32",
+        titulo: "Samsung A32",
         imagen: "../img/samsung a32.jpg",
         categoria: {
             nombre: "Samsung",
@@ -101,7 +101,7 @@ const productos = [
     },
     {
         id: "samsung-s22",
-        titulo: "samsung s22",
+        titulo: "Samsung S22",
         imagen: "../img/samsungs22.jpg",
         categoria: {
             nombre: "Samsung",
@@ -111,7 +111,7 @@ const productos = [
     },
     {
         id: "samsung-s20",
-        titulo: "samsung s20",
+        titulo: "Samsung S20",
         imagen: "../img/samsungs20.jpg",
         categoria: {
             nombre: "Samsung",
@@ -155,52 +155,6 @@ productos.forEach((product) => {
 
     carContenido.append(content);
 });
-
-verCarrito.addEventListener("click", () => {
-    const modalHeader = document.createElement("div");
-    modalHeader.className = "modal-header";
-    modalHeader.innerHTML = `
-        <h1 class="modal-header-title"></h1>
-        <h1 class="modal-header-button">X</h1>
-    `;
-    modalContainer.append(verCarrito);
-
-    const modalbutton = document.createElement("h1")
-    modalbutton.innerText = "x";
-    modalbutton.className = "modal-header-button";
-
-    modalbutton.addEventListener("click", () =>{
-        modalContainer.style.display = "none";
-
-    });
-
-    carrito.forEach((product) => {
-        let carritoContent = document.createElement("div");
-        carritoContent.className = "modal-content";
-        carritoContent.innerHTML = `
-            <img src="${product.imagen}" alt="${product.titulo}">
-            <h3>${product.titulo}</h3>
-            <p class="celular_texto">$${product.precio}</p>
-        `;
-
-        modalContainer.append(carritoContent);
-    });
-
-
-    const total = carrito.reduce((acc, el) => acc + el.precio, 0);
-    const modalFooter = document.createElement("div");
-    modalFooter.className = "modal-footer";
-    modalFooter.innerHTML = `
-    <p class="modal-footer-text">Total a pagar: $${total}</p>
-    <a href="#" class="modal-footer-button">Comprar</a>
-    `;
-    modalContainer.append(modalFooter);
-    
-
-});
-
-
-  
 
 
 

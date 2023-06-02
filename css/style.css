@@ -223,6 +223,8 @@ footer {
 
 .modal-header-button {
   cursor: pointer;
+  
+  
 }
 
 .modal-container > .modal-content {
@@ -337,4 +339,8 @@ main {
   text-decoration: none;
   cursor: pointer;
   margin-top: 10px;
+}
+
+.delete-product{
+  cursor: pointer;
 }
