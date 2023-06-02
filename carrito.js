@@ -1,4 +1,4 @@
-    const comprarCarrito = () => { 
+const comprarCarrito = () => { 
     modalContainer.innerHTML = "";
     modalContainer.style.display = "flex"
     const modalHeader = document.createElement("div");
