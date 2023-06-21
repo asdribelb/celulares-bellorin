@@ -1,0 +1,14 @@
+[
+{"titulo": "Iphone 7", "imagen": "../img/iphone 7.jpg", "precio":"150990", "id": "iphone-7"},
+{"titulo": "Iphone 8", "imagen": "../img/iphone 8.jpg", "precio":"169990", "id": "iphone-8"},
+{"titulo": "Iphone X", "imagen": "../img/iphone x.jpg", "precio":"415990", "id": "iphone-x"},
+{"titulo": "Iphone 11", "imagen": "../img/IPHONE 11.jpg", "precio":"500990", "id": "iphone-11"},
+{"titulo": "Iphone 12", "imagen": "../img/iphone 12.jpg", "precio":"310990", "id": "iphone-12"},
+{"titulo": "Iphone 13", "imagen": "../img/iphone 13.jpg", "precio":"415990", "id": "iphone-13"},
+{"titulo": "Samsung S21", "imagen": "../img/samsung galaxy s21.jpg", "precio":"250990", "id": "samsung-s21"},
+{"titulo": "Samsung Note20", "imagen": "../img/SAMSUNG20.jpg", "precio":"310990", "id": "samsung-note20"},
+{"titulo": "Samsung A52", "imagen": "../img/SAMSUNG A52.jpg", "precio":"415990", "id": "samsung-a52"},
+{"titulo": "Samsung A32", "imagen": "../img/SAMSUNG A32.jpg", "precio":"400990", "id": "samsung-a32"},
+{"titulo": "Samsung S22", "imagen": "../img/samsungs22.jpg", "precio":"500990", "id": "samsung-s22"},
+{"titulo": "Samsung S20", "imagen": "../img/SAMSUNGS20.jpg", "precio":"699990", "id": "samsung-s20"}
+]

@@ -1,12 +1,11 @@
-const comprarCarrito = () => { 
+const comprarCarrito = () => {
     modalContainer.innerHTML = "";
     modalContainer.style.display = "flex"
     const modalHeader = document.createElement("div");
     modalHeader.className = "modal-header";
     modalHeader.innerHTML = `
-        <h1 class="modal-header-title">Carrito.</h1> 
+        <h1 class="modal-header-title">Carrito</h1> 
         
-
     `;
     modalContainer.append(modalHeader);
 
@@ -16,7 +15,7 @@ const comprarCarrito = () => {
 
     modalHeader.append(modalbutton);
 
-    modalbutton.addEventListener("click", () =>{
+    modalbutton.addEventListener("click", () => {
         modalContainer.style.display = "none";
 
     });
@@ -25,8 +24,8 @@ const comprarCarrito = () => {
         let carritoContent = document.createElement("div");
         carritoContent.className = "modal-content";
         carritoContent.innerHTML = `
-            <img src="${product.imagen}" alt="${product.titulo}">
-            <h3>${product.titulo}</h3>
+            <img src="${product.imagen}" alt="${product.nombre}">
+            <h3>${product.nombre}</h3>
             <p class="celular_texto">$${product.precio}</p>
         `;
 
@@ -34,14 +33,14 @@ const comprarCarrito = () => {
 
         let eliminar = document.createElement("span");
 
-    eliminar.innerText = "❌";
-    eliminar.className = "delete-product";
-    carritoContent.append(eliminar);
-    eliminar.addEventListener("click", eliminarProductos);
+        eliminar.innerText = "❌";
+        eliminar.className = "delete-product";
+        carritoContent.append(eliminar);
+        eliminar.addEventListener("click", eliminarProductos);
     });
 
 
-    const total = carrito.reduce((acc, el) => acc + el.precio, 0);
+    const total = carrito.reduce((acc, el) => acc + parseInt(el.precio), 0);
     const modalFooter = document.createElement("div");
     modalFooter.className = "modal-footer";
     modalFooter.innerHTML = `
@@ -49,7 +48,7 @@ const comprarCarrito = () => {
     <a href="#" class="modal-footer-button">Comprar</a>
     `;
     modalContainer.append(modalFooter);
-    
+
 };
 
 verCarrito.addEventListener("click", comprarCarrito);
