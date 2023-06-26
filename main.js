@@ -16,7 +16,7 @@ fetch("../json/articulos.json")
       content.innerHTML = `
         <img src="${producto.imagen}" alt="${producto.titulo}">
         <h3>${producto.titulo}</h3>
-        <p class="celular_texto">${producto.precio}</p>
+        <p class="celular_texto">$${producto.precio}</p>
         <a href="#" class="boton" id="${producto.id}">Agregar al Carrito</a>
       `; 
 
@@ -61,7 +61,7 @@ function mostrarArticulos(datos) {
     carContenido.innerHTML += `
       <h2>Nombre: ${producto.titulo} </h2>
       <p> Imagen: ${producto.imagen} </p>
-      <p> Precio: ${producto.precio} </p>
+      <p> Precio: $${producto.precio} </p>
       <p> ID: ${producto.id} </p>
       <button> Agregar al carrito </button>
     `;
