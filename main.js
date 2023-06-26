@@ -20,7 +20,6 @@ fetch("../json/articulos.json")
         <a href="#" class="boton" id="${producto.id}">Agregar al Carrito</a>
       `; 
 
-
       const comprar = content.querySelector(".boton");
 
       comprar.addEventListener("click", () => {

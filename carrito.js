@@ -1,3 +1,5 @@
+/*¨Mostrar el carrito de compras*/
+
 const comprarCarrito = () => {
     modalContainer.innerHTML = "";
     modalContainer.style.display = "flex"
@@ -32,13 +34,17 @@ const comprarCarrito = () => {
         modalContainer.append(carritoContent);
 
         let eliminar = document.createElement("span");
-
         eliminar.innerText = "❌";
         eliminar.className = "delete-product";
         carritoContent.append(eliminar);
-        eliminar.addEventListener("click", eliminarProductos);
+
+       eliminar.addEventListener("click", () => {
+            eliminarProductos(product.id);
+        });
     });
 
+
+    /*Calcular el total a pagar*/
 
     const total = carrito.reduce((acc, el) => acc + parseInt(el.precio), 0);
     const modalFooter = document.createElement("div");
@@ -54,11 +60,11 @@ const comprarCarrito = () => {
 verCarrito.addEventListener("click", comprarCarrito);
 
 
-const eliminarProductos = () => {
-    const foundId = carrito.find((element) => element.id);
+/*Eliminar productos del carrito*/
 
-    carrito = carrito.filter((carritoId) => {
-        return carritoId.id !== foundId.id;
+const eliminarProductos = (productId) => {
+    carrito = carrito.filter((product) => {
+        return product.id !== productId;
     });
     comprarCarrito();
 };
